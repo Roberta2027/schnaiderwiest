@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Schnaider Wiest Advocacia · Escritório digital</title>
+<meta name="description" content="Escritório digital de advocacia. Atendimento online para pessoas, famílias e empresas: inventários, imóveis, dívidas e execuções, contratos e patrimônio. Roberta Schnaider Wiest, OAB/SC 65.344.">
+<link rel="canonical" href="https://roberta2027.github.io/schnaiderwiest/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Schnaider Wiest Advocacia · Escritório digital">
+<meta property="og:description" content="Direito explicado com clareza e defendido com firmeza. Atendimento online.">
+<meta property="og:url" content="https://roberta2027.github.io/schnaiderwiest/">
+<meta property="og:image" content="https://roberta2027.github.io/schnaiderwiest/assets/og-image-1200x630.png">
+<meta name="theme-color" content="#15202B">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "name": "Schnaider Wiest Advocacia",
+  "description": "Escritório digital de advocacia: família e sucessões, imóveis, dívidas e execuções, contratos e patrimônio.",
+  "url": "https://roberta2027.github.io/schnaiderwiest/",
+  "email": "advocacia@schnaiderwiest.com",
+  "telephone": "+55 47 99911-6414",
+  "areaServed": "BR",
+  "address": {"@type": "PostalAddress", "addressLocality": "Joinville", "addressRegion": "SC", "addressCountry": "BR"},
+  "founder": {"@type": "Person", "name": "Roberta Schnaider Wiest"}
+}
+</script>
+<style>
+:root {
+  --tinta: #15202B;
+  --papel: #F5F2EA;
+  --lacre: #9B2C22;
+  --lacre-claro: #E07A6E;
+  --ardosia: #3E5667;
+  --grafite: #505862;
+  --pedra: #D8D2C4;
+  --nevoa: #EAE5D9;
+  --branco: #FFFFFF;
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans: "IBM Plex Sans", Arial, sans-serif;
+  --mono: "IBM Plex Mono", "Courier New", monospace;
+  --max: 1200px;
+  --gutter: clamp(16px, 4vw, 48px);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+section[id] { scroll-margin-top: 76px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+body {
+  margin: 0;
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
+.skip { position: absolute; left: -9999px; }
+.skip:focus { left: 16px; top: 16px; background: var(--tinta); color: var(--papel); padding: 8px 12px; z-index: 10; }
+:focus-visible { outline: 2px solid var(--lacre); outline-offset: 3px; }
+
+/* Rótulos e títulos */
+.rotulo {
+  font-family: var(--mono);
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--lacre);
+  margin: 0 0 12px;
+}
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; margin: 0; letter-spacing: -.005em; }
+h1 { font-size: clamp(36px, 6vw, 56px); line-height: 1.1; }
+h2 { font-size: clamp(28px, 4vw, 40px); line-height: 1.2; }
+h3 { font-family: var(--sans); font-size: 20px; line-height: 1.35; font-weight: 600; }
+p { margin: 0 0 16px; }
+.lead { font-family: var(--serif); font-size: clamp(18px, 2.2vw, 21px); line-height: 1.55; max-width: 40em; }
+.sec { padding: clamp(56px, 9vw, 104px) 0; border-top: .5px solid var(--pedra); }
+.sec-head { max-width: 760px; margin-bottom: 40px; }
+.sec-head p { color: var(--grafite); margin-top: 16px; }
+
+/* Botão */
+.btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--sans); font-weight: 600; font-size: 16px;
+  text-decoration: none;
+  padding: 14px 22px; border-radius: 2px;
+  background: var(--tinta); color: var(--papel);
+  border: 1px solid var(--tinta);
+  transition: background .25s ease-out, color .25s ease-out;
+}
+.btn:hover { background: #22303d; }
+.btn.claro { background: transparent; color: var(--tinta); }
+.btn.claro:hover { background: var(--nevoa); }
+.btn svg { width: 18px; height: 18px; flex: none; }
+
+/* Cabeçalho */
+header.topo { position: sticky; top: 0; z-index: 5; background: rgba(245, 242, 234, .94); backdrop-filter: blur(6px); border-bottom: .5px solid var(--pedra); }
+.topo .wrap { display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 76px; }
+.topo .marca img { height: 34px; width: auto; }
+.topo nav { display: flex; align-items: center; gap: 28px; }
+.topo nav a.link { text-decoration: none; font-size: 15px; color: var(--grafite); }
+.topo nav a.link:hover { color: var(--tinta); }
+.topo .btn { padding: 10px 16px; font-size: 15px; white-space: nowrap; }
+.topo .btn .curto { display: none; }
+@media (max-width: 520px) { .topo .btn .longo { display: none; } .topo .btn .curto { display: inline; } }
+@media (max-width: 860px) { .topo nav a.link { display: none; } .topo .marca img { height: 26px; } }
+
+/* Abertura */
+.abertura { padding: clamp(56px, 10vw, 120px) 0 clamp(56px, 8vw, 96px); }
+.abertura .grid { display: grid; grid-template-columns: 1.35fr 1fr; gap: clamp(32px, 6vw, 80px); align-items: end; }
+.abertura h1 { margin-bottom: 24px; }
+.abertura .acoes { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+.resumo {
+  background: var(--branco);
+  border-left: 3px solid var(--lacre);
+  padding: 24px 28px;
+}
+.resumo dl { margin: 0; display: grid; gap: 18px; }
+.resumo dt { font-family: var(--mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--grafite); }
+.resumo dd { margin: 4px 0 0; font-weight: 600; line-height: 1.45; }
+@media (max-width: 860px) { .abertura .grid { grid-template-columns: 1fr; } }
+
+/* Por que registrar */
+.porque .grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 80px); }
+.citacao {
+  font-family: var(--serif); font-style: italic; font-size: clamp(20px, 2.6vw, 26px); line-height: 1.45;
+  margin: 0; padding-left: 24px; border-left: .5px solid var(--tinta);
+}
+.citacao cite { display: block; margin-top: 12px; font-family: var(--mono); font-style: normal; font-size: 13px; color: var(--grafite); letter-spacing: .04em; }
+.lista-simples { list-style: none; padding: 0; margin: 0; }
+.lista-simples li { padding: 14px 0; border-bottom: .5px solid var(--pedra); display: grid; grid-template-columns: 28px 1fr; gap: 8px; }
+.lista-simples li:first-child { border-top: .5px solid var(--pedra); }
+.lista-simples svg { width: 20px; height: 20px; margin-top: 4px; stroke: var(--ardosia); }
+@media (max-width: 860px) { .porque .grid { grid-template-columns: 1fr; } }
+
+/* Situações */
+.situacoes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--pedra); border: .5px solid var(--pedra); }
+.situacao { background: var(--papel); padding: 28px 28px 32px; display: flex; flex-direction: column; }
+.situacao .num { font-family: var(--mono); font-size: 13px; color: var(--grafite); margin-bottom: 18px; }
+.situacao h3 { margin-bottom: 10px; }
+.situacao p { color: var(--grafite); font-size: 16px; }
+.situacao .caminho { margin-top: auto; padding-top: 14px; border-top: .5px solid var(--pedra); font-size: 15px; }
+.situacao .caminho span { font-family: var(--mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--grafite); display: block; margin-bottom: 2px; }
+@media (max-width: 960px) { .situacoes { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 620px) { .situacoes { grid-template-columns: 1fr; } }
+
+/* Linha do tempo */
+.etapas { list-style: none; margin: 0; padding: 0; position: relative; max-width: 820px; }
+.etapas::before { content: ""; position: absolute; left: 7px; top: 8px; bottom: 8px; width: 1px; background: var(--pedra); }
+.etapas li { position: relative; padding: 0 0 36px 44px; }
+.etapas li:last-child { padding-bottom: 0; }
+.etapas li::before { content: ""; position: absolute; left: 1px; top: 7px; width: 13px; height: 13px; border-radius: 50%; background: var(--tinta); }
+.etapas .num { font-family: var(--mono); font-size: 13px; color: var(--grafite); }
+.etapas h3 { margin: 2px 0 6px; }
+.etapas p { color: var(--grafite); margin: 0; }
+.nota { font-size: 14px; color: var(--grafite); margin-top: 32px; max-width: 820px; }
+
+/* Destaque em Tinta */
+.faixa { background: var(--tinta); color: var(--papel); padding: clamp(56px, 8vw, 96px) 0; }
+.faixa p.frase { font-family: var(--serif); font-size: clamp(26px, 3.6vw, 38px); line-height: 1.3; max-width: 24em; margin: 0; }
+.faixa .ponto { display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: var(--lacre-claro); margin-bottom: 24px; }
+.faixa .sub { color: var(--pedra); margin-top: 20px; max-width: 40em; }
+
+/* Perguntas */
+.perguntas { max-width: 860px; border-top: .5px solid var(--pedra); }
+.perguntas details { border-bottom: .5px solid var(--pedra); }
+.perguntas summary {
+  list-style: none; cursor: pointer; padding: 22px 40px 22px 0; position: relative;
+  font-family: var(--serif); font-size: 21px; font-weight: 600; line-height: 1.35;
+}
+.perguntas summary::-webkit-details-marker { display: none; }
+.perguntas summary::after { content: "+"; position: absolute; right: 4px; top: 18px; font-family: var(--sans); font-weight: 400; font-size: 26px; color: var(--grafite); }
+.perguntas details[open] summary::after { content: "−"; }
+.perguntas .resposta { padding: 0 0 24px; color: var(--grafite); max-width: 46em; }
+.perguntas .resposta p:last-child { margin-bottom: 0; }
+
+/* Contato */
+.contato .grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: clamp(32px, 6vw, 80px); align-items: start; }
+.canais { list-style: none; margin: 0; padding: 0; background: var(--branco); }
+.canais li { display: grid; grid-template-columns: 24px 1fr; gap: 14px; padding: 18px 24px; border-bottom: .5px solid var(--pedra); }
+.canais li:last-child { border-bottom: 0; }
+.canais svg { width: 20px; height: 20px; stroke: var(--ardosia); margin-top: 3px; }
+.canais .tipo { font-family: var(--mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--grafite); display: block; }
+.canais a { text-decoration: none; font-weight: 500; }
+.canais a:hover { text-decoration: underline; }
+.privacidade { font-size: 14px; color: var(--grafite); margin-top: 20px; }
+@media (max-width: 860px) { .contato .grid { grid-template-columns: 1fr; } }
+
+/* Rodapé */
+footer.rodape { background: var(--tinta); color: var(--pedra); padding: 48px 0 40px; font-size: 14px; }
+footer.rodape .linha { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; align-items: flex-start; }
+footer.rodape strong { color: var(--papel); font-weight: 500; }
+footer.rodape .mono { font-family: var(--mono); font-size: 13px; }
+footer.rodape .aviso { margin-top: 28px; padding-top: 20px; border-top: .5px solid #2c3a47; max-width: 60em; }
+footer.rodape a { color: var(--papel); }
+
+/* Áreas */
+.areas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--pedra); border: .5px solid var(--pedra); }
+.area { background: var(--papel); padding: 28px 28px 32px; }
+.area .num, .pilar .num { font-family: var(--mono); font-size: 13px; color: var(--grafite); margin-bottom: 18px; }
+.area h3 { margin-bottom: 8px; }
+.area p { color: var(--grafite); font-size: 16px; }
+.area ul { list-style: none; margin: 16px 0 0; padding: 0; border-top: .5px solid var(--pedra); }
+.area li { padding: 10px 0; border-bottom: .5px solid var(--pedra); font-size: 15px; }
+@media (max-width: 960px) { .areas { grid-template-columns: 1fr; } }
+.destaque-link {
+  display: grid; grid-template-columns: 1fr auto; gap: 4px 24px; align-items: center;
+  margin-top: 32px; padding: 24px 28px; background: var(--branco); border-left: 3px solid var(--lacre);
+  text-decoration: none; transition: background .25s ease-out;
+}
+.destaque-link:hover { background: var(--nevoa); }
+.destaque-link .rotulo-mini { grid-column: 1; font-family: var(--mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--grafite); }
+.destaque-link strong { grid-column: 1; font-family: var(--serif); font-size: 24px; font-weight: 600; }
+.destaque-link span:not(.rotulo-mini):not(.seta) { grid-column: 1; color: var(--grafite); }
+.destaque-link .seta { grid-column: 2; grid-row: 1 / span 3; font-size: 28px; }
+/* Pilares */
+.pilares { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
+.pilar { border-top: .5px solid var(--tinta); padding-top: 20px; }
+.pilar h3 { font-family: var(--serif); font-size: 24px; margin-bottom: 8px; }
+.pilar p { color: var(--grafite); font-size: 16px; }
+@media (max-width: 960px) { .pilares { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .pilares { grid-template-columns: 1fr; } }
+/* Sobre */
+.sobre .grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: clamp(32px, 6vw, 80px); }
+.sobre .oab { font-family: var(--mono); font-size: 14px; color: var(--grafite); margin-top: 12px; }
+@media (max-width: 860px) { .sobre .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo">
+  <div class="wrap">
+    <a class="marca" href="#topo" aria-label="Schnaider Wiest Advocacia, início"><img src="assets/logo-sw.svg" alt="Schnaider Wiest Advocacia" width="198" height="34"></a>
+    <nav aria-label="Seções da página">
+      <a class="link" href="#atuacao">Atuação</a>
+      <a class="link" href="#como-trabalhamos">Como trabalhamos</a>
+      <a class="link" href="#sobre">Sobre</a>
+      <a class="btn" href="#contato"><span class="longo">Falar com o escritório</span><span class="curto">Contato</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <section class="abertura" id="topo">
+    <div class="wrap grid">
+      <div>
+        <p class="rotulo">Escritório digital · OAB/SC 65.344</p>
+        <h1>Direito explicado com clareza e defendido com firmeza.</h1>
+        <p class="lead">Atendimento online para pessoas, famílias e empresas. Você entende cada passo por escrito, sabe o que esperar e decide com segurança.</p>
+        <div class="acoes">
+          <a class="btn" href="#contato">Falar com o escritório</a>
+          <a class="btn claro" href="#atuacao">Ver áreas de atuação</a>
+        </div>
+      </div>
+      <aside class="resumo" aria-label="Resumo">
+        <dl>
+          <div><dt>Como é o atendimento</dt><dd>Online, por WhatsApp, e-mail e videochamada.</dd></div>
+          <div><dt>O que você recebe</dt><dd>Um diagnóstico por escrito: caminho, custos, prazos estimados e riscos.</dd></div>
+          <div><dt>Durante o caso</dt><dd>Cada movimentação explicada: onde está, o que significa e qual o próximo passo.</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <section class="sec" id="atuacao" aria-labelledby="t-atuacao">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="rotulo">01 · Atuação</p>
+        <h2 id="t-atuacao">Para quem trabalhamos.</h2>
+        <p>Três frentes, com o mesmo método: entender o problema, explicar as opções por escrito e agir com firmeza.</p>
+      </div>
+      <div class="areas">
+        <article class="area">
+          <div class="num">01</div>
+          <h3>Pessoas e famílias</h3>
+          <p>Questões que mexem com o patrimônio e com a tranquilidade da família.</p>
+          <ul>
+            <li>Inventário e partilha, em cartório ou na Justiça</li>
+            <li>Regularização de imóveis e usucapião</li>
+            <li>Defesa em execuções e cobranças de dívidas</li>
+            <li>Proteção do bem de família</li>
+          </ul>
+        </article>
+        <article class="area">
+          <div class="num">02</div>
+          <h3>Empresas e empresários</h3>
+          <p>Disputas que afetam o caixa, a sociedade e o patrimônio dos sócios.</p>
+          <ul>
+            <li>Execuções e cobranças, como credor ou devedor</li>
+            <li>Defesa contra a responsabilização pessoal de sócios</li>
+            <li>Disputas societárias em empresas familiares</li>
+            <li>Ações de consumo e contratos descumpridos</li>
+          </ul>
+        </article>
+        <article class="area">
+          <div class="num">03</div>
+          <h3>Consultivo</h3>
+          <p>Prevenir é mais barato que litigar. Orientação antes da decisão.</p>
+          <ul>
+            <li>Elaboração e revisão de contratos</li>
+            <li>Organização patrimonial e sucessória</li>
+            <li>Pareceres por escrito sobre riscos e alternativas</li>
+            <li>Análise de documentos antes de comprar um imóvel</li>
+          </ul>
+        </article>
+      </div>
+      <a class="destaque-link" href="https://www.imovelregularizacao.seg.br/lp/">
+        <span class="rotulo-mini">Página dedicada</span>
+        <strong>Regularização de imóveis</strong>
+        <span>Contrato de gaveta, posse antiga, herança sem inventário: veja os caminhos que a lei oferece.</span>
+        <span class="seta" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="sec" id="como-trabalhamos" aria-labelledby="t-como">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="rotulo">02 · Como trabalhamos</p>
+        <h2 id="t-como">Um método, do primeiro contato ao fim do caso.</h2>
+      </div>
+      <ol class="etapas">
+        <li>
+          <div class="num">01</div>
+          <h3>Conversa inicial</h3>
+          <p>Você conta o que aconteceu e envia os documentos que já tem. Indicamos o que falta e onde conseguir.</p>
+        </li>
+        <li>
+          <div class="num">02</div>
+          <h3>Diagnóstico por escrito</h3>
+          <p>Você recebe as opções possíveis, os custos, os prazos estimados e os principais riscos de cada caminho.</p>
+        </li>
+        <li>
+          <div class="num">03</div>
+          <h3>Proposta clara</h3>
+          <p>Escopo, honorários e o que está incluído ou não, tudo por escrito antes de começar.</p>
+        </li>
+        <li>
+          <div class="num">04</div>
+          <h3>Acompanhamento</h3>
+          <p>A cada movimentação relevante, você recebe uma explicação: onde o caso está, o que significa e o próximo passo.</p>
+        </li>
+      </ol>
+      <p class="nota">Os prazos dependem do Judiciário, dos cartórios e da outra parte. Informamos as estimativas por escrito e atualizamos sempre que algo muda.</p>
+    </div>
+  </section>
+
+  <section class="faixa" aria-label="Nosso compromisso">
+    <div class="wrap">
+      <span class="ponto" aria-hidden="true"></span>
+      <p class="frase">Nenhuma decisão importante será tomada sem que você a entenda por escrito.</p>
+      <p class="sub">É um compromisso de conduta, não uma promessa de resultado.</p>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="t-principios">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="rotulo">03 · Princípios</p>
+        <h2 id="t-principios">O que você pode esperar.</h2>
+      </div>
+      <div class="pilares">
+        <div class="pilar"><div class="num">01</div><h3>Clareza</h3><p>Linguagem simples, sem juridiquês. Cada documento importante vem explicado.</p></div>
+        <div class="pilar"><div class="num">02</div><h3>Firmeza</h3><p>Defesa técnica e consistente, sem promessas fáceis e sem alarmismo.</p></div>
+        <div class="pilar"><div class="num">03</div><h3>Proximidade</h3><p>Atendimento direto com a advogada responsável pelo seu caso.</p></div>
+        <div class="pilar"><div class="num">04</div><h3>Previsibilidade</h3><p>Você sabe o que vem a seguir, quanto custa e quais são os riscos.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sobre" id="sobre" aria-labelledby="t-sobre">
+    <div class="wrap grid">
+      <div>
+        <p class="rotulo">04 · Sobre</p>
+        <h2 id="t-sobre">Roberta Schnaider Wiest</h2>
+        <p class="oab">Advogada · OAB/SC 65.344</p>
+      </div>
+      <div>
+        <p class="lead">A Schnaider Wiest Advocacia é um escritório digital com sede em Joinville/SC. O atendimento é feito online, com a mesma proximidade de uma conversa presencial.</p>
+        <p>Cada cliente é atendido diretamente pela advogada responsável. As decisões são tomadas em conjunto, depois de explicadas por escrito.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec contato" id="contato" aria-labelledby="t-contato">
+    <div class="wrap grid">
+      <div>
+        <p class="rotulo">05 · Contato</p>
+        <h2 id="t-contato">Conte o que está acontecendo.</h2>
+        <p class="lead" style="margin-top:20px">Uma mensagem curta basta: o que aconteceu, quando e quais documentos você tem. Respondemos com os próximos passos.</p>
+        <a class="btn" href="https://wa.me/5547999116414?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20o%20escrit%C3%B3rio%20Schnaider%20Wiest." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+          Falar com o escritório pelo WhatsApp
+        </a>
+        <p class="privacidade">Os dados que você enviar são usados só para responder ao seu contato e analisar o seu caso, conforme a Lei Geral de Proteção de Dados (Lei 13.709/2018).</p>
+      </div>
+      <ul class="canais">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+          <div><span class="tipo">WhatsApp</span><a href="https://wa.me/5547999116414" target="_blank" rel="noopener">+55 47 99911-6414</a></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          <div><span class="tipo">E-mail</span><a href="mailto:advocacia@schnaiderwiest.com">advocacia@schnaiderwiest.com</a></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/></svg>
+          <div><span class="tipo">Atendimento</span>Escritório digital · Joinville/SC</div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
+          <div><span class="tipo">Instagram</span><a href="https://www.instagram.com/imovelregularizacao/" target="_blank" rel="noopener">@imovelregularizacao</a></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <div class="linha">
+      <div>
+        <strong>Schnaider Wiest Advocacia</strong><br>
+        Roberta Schnaider Wiest · <span class="mono">OAB/SC 65.344</span>
+      </div>
+      <div>Escritório digital · Joinville/SC<br><a href="mailto:advocacia@schnaiderwiest.com">advocacia@schnaiderwiest.com</a></div>
+    </div>
+    <p class="aviso">Conteúdo de caráter informativo, conforme o Provimento 205/2021 do Conselho Federal da OAB. Não substitui a análise do seu caso.</p>
+  </div>
+</footer>
+</body>
+</html>
