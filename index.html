@@ -109,13 +109,17 @@ p { margin: 0 0 16px; }
 header.topo { position: sticky; top: 0; z-index: 5; background: rgba(245, 242, 234, .94); backdrop-filter: blur(6px); border-bottom: .5px solid var(--pedra); }
 .topo .wrap { display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 76px; }
 .topo .marca img { height: 34px; width: auto; }
+/* Pinheiro de Natal: aparece até 26/12/2026 (script logo após o cabeçalho) */
+.topo .marca { display: inline-flex; align-items: center; gap: 14px; }
+.topo .natal { height: 34px; width: auto; flex: none; color: var(--tinta); }
+.topo .natal[hidden] { display: none; }
 .topo nav { display: flex; align-items: center; gap: 28px; }
 .topo nav a.link { text-decoration: none; font-size: 15px; color: var(--grafite); }
 .topo nav a.link:hover { color: var(--tinta); }
 .topo .btn { padding: 10px 16px; font-size: 15px; white-space: nowrap; }
 .topo .btn .curto { display: none; }
 @media (max-width: 520px) { .topo .btn .longo { display: none; } .topo .btn .curto { display: inline; } }
-@media (max-width: 860px) { .topo nav a.link { display: none; } .topo .marca img { height: 26px; } }
+@media (max-width: 860px) { .topo nav a.link { display: none; } .topo .marca img, .topo .natal { height: 26px; } .topo .marca { gap: 10px; } }
 
 /* Abertura */
 .abertura { padding: clamp(56px, 10vw, 120px) 0 clamp(56px, 8vw, 96px); }
@@ -243,7 +247,7 @@ footer.rodape a { color: var(--papel); }
 
 <header class="topo">
   <div class="wrap">
-    <a class="marca" href="#topo" aria-label="Schnaider Wiest Advocacia, início"><img src="assets/logo-sw.svg" alt="Schnaider Wiest Advocacia" width="198" height="34"></a>
+    <a class="marca" href="#topo" aria-label="Schnaider Wiest Advocacia, início"><img src="assets/logo-sw.svg" alt="Schnaider Wiest Advocacia" width="198" height="34"><svg class="natal" id="natal" hidden aria-hidden="true" focusable="false" viewBox="0 0 150 200" width="26" height="34"><g fill="currentColor"><polygon points="75,22 40,80 110,80"/><polygon points="75,52 20,125 130,125"/><polygon points="75,90 0,170 150,170"/><rect x="66" y="170" width="18" height="26"/></g><circle cx="75" cy="12" r="10" fill="#9B2C22"/></svg></a>
     <nav aria-label="Seções da página">
       <a class="link" href="#atuacao">Atuação</a>
       <a class="link" href="#como-trabalhamos">Como trabalhamos</a>
@@ -252,6 +256,17 @@ footer.rodape a { color: var(--papel); }
     </nav>
   </div>
 </header>
+<script>
+/* Mostra o pinheiro até 26/12/2026, pelo horário de Brasília; some sozinho no dia 27. */
+(function () {
+  try {
+    var p = {};
+    new Intl.DateTimeFormat("en-US", { timeZone: "America/Sao_Paulo", year: "numeric", month: "2-digit", day: "2-digit" })
+      .formatToParts(new Date()).forEach(function (x) { p[x.type] = x.value; });
+    if (p.year + "-" + p.month + "-" + p.day <= "2026-12-26") document.getElementById("natal").removeAttribute("hidden");
+  } catch (e) {}
+})();
+</script>
 
 <main id="conteudo">
 
